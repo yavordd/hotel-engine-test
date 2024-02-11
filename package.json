@@ -4,7 +4,9 @@
   "description": "cypress tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "cypress run",
+    "cy:run:e2e": "cypress run --e2e --browser=chrome",
+    "cy:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
