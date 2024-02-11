@@ -6,7 +6,8 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:run:e2e": "cypress run --e2e --browser=chrome",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:open:e2e": "cypress open --e2e --browser=chrome"
   },
   "author": "Yavor Dimov",
   "license": "ISC",
