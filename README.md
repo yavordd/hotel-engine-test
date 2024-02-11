@@ -7,7 +7,7 @@
 * For Windows machines you can find the latest [installation instructions here](https://nodejs.org/en/download/package-manager#windows-1)
 2. `cd` into the directory where you store your projects.
 3. Clone the repository with `git clone https://github.com/yavordd/hotel-engine-test.git`.
-4. `cd` into `hotel-engine-test` directory that should have been created if the repo was successfully cloned.
+4. `cd` into the `hotel-engine-test` directory that should have been created if the repo was successfully cloned.
 5. Run `npm install` to install latest dependencies.
 
 ## Running the tests

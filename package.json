@@ -1,14 +1,14 @@
 {
   "name": "cypress",
   "version": "1.0.0",
-  "description": "cypress tests",
+  "description": "Cypress tests for Hotel Engine",
   "main": "index.js",
   "scripts": {
     "cy:run": "cypress run",
     "cy:run:e2e": "cypress run --e2e --browser=chrome",
     "cy:open": "cypress open"
   },
-  "author": "",
+  "author": "Yavor Dimov",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.6.4",

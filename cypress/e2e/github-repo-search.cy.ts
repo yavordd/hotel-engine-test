@@ -3,8 +3,8 @@ describe('GitHub Repo Search Happy Path Tests', () => {
     cy.searchGitHubRepos('create-react-app').then(response => {
       expect(response.status).to.eq(200);
 
-      const items = response.body.items;
-      const topResult = items[0];
+      // The 'items' property contains an array of the repositories, and their metadata, that matched our search query.
+      const topResult = response.body.items[0];
       const topResultUrl = topResult.html_url;
 
       expect(topResult.name).to.eq('create-react-app');
@@ -17,9 +17,9 @@ describe('GitHub Repo Search Happy Path Tests', () => {
         node_id: 'MDc6TGljZW5zZTEz',
       })
 
-      cy.visit(topResultUrl);
+      // Verify we can successfully load the 'create-react-app' repo page using the returned metadata.
 
-      // Verify we've successfully loaded the 'create-react-app' repo page
+      cy.visit(topResultUrl);
 
       cy.url().should('eq', topResultUrl);
       cy.get('.Layout-sidebar').should('contain.text', topResult.description);
